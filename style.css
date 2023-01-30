@@ -1,0 +1,51 @@
+body{font-family: 'Monserrat' sans-serif;
+}
+#header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    transition: top .3s ease;
+  }
+
+  #header.show{
+    top: -70px;
+  }
+
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1{
+  text-align: center;
+  margin: 100px auto;
+  max-width: 550px;
+  position: relative;
+}
+
+h1::before{
+  background-color:black;
+  display: block;
+  width: 120px;
+  height: 2px;
+  content:"";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -1;
+}
+h1::after{
+  background-color:black;
+  display: block;
+  width: 120px;
+  height: 2px;
+  content:"";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -1;
+}
+
